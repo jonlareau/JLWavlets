@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of generateTestTarget</title>
+  <meta name="keywords" content="generateTestTarget">
+  <meta name="description" content="target = generateTestTarget(n,R)">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../index.html">Home</a> &gt;  <a href="index.html">Wavelet</a> &gt; generateTestTarget.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../index.html"><img alt="<" border="0" src="../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for Wavelet&nbsp;<img alt=">" border="0" src="../right.png"></a></td></tr></table>-->
+
+<h1>generateTestTarget
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>target = generateTestTarget(n,R)</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function target = generateTestTarget(n,R) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment">target = generateTestTarget(n,R)
+target = generateTestTarget(s,R)
+target = generateTestTarget()
+
+Generates a 2D or 3D resolution test target.
+   n --&gt; [(2) 3] Number of dimensions to make the target.
+   s --&gt; Seed.  Serves as a template for creating the target. Default is a
+       [16 x 16] or [16 x 16 x 16] predefined template. The 2D target has
+       vertical, horizontal, and checker-board patterns of multiple sizes,
+       beginning with lines of 1 pixel width.  The 3D default template
+       has vertical, horizontal and z-dimension planes, as well as 3D
+       checker-board patterns.
+   R --&gt; Recusion Level.  Number of times to recursively grow the seed
+       target. Each time the target is grown it's size doubles (Default =
+       4)</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+</ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="JJL_den2D.html" class="code" title="function [y,w,T] = JJL_den2D(x,T,J)">JJL_den2D</a>	%</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Mon 03-Oct-2011 09:42:49 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

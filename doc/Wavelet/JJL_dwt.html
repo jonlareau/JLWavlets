@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of JJL_dwt</title>
+  <meta name="keywords" content="JJL_dwt">
+  <meta name="description" content="Discrete 1-D Wavelet Transform">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../index.html">Home</a> &gt;  <a href="index.html">Wavelet</a> &gt; JJL_dwt.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../index.html"><img alt="<" border="0" src="../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for Wavelet&nbsp;<img alt=">" border="0" src="../right.png"></a></td></tr></table>-->
+
+<h1>JJL_dwt
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Discrete 1-D Wavelet Transform</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function w = JJL_dwt(x, J, af) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Discrete 1-D Wavelet Transform
+
+ USAGE:
+    w = dwt(x, J, af)
+ INPUT:
+    x - N-point vector, where
+            1) N is divisible by 2^J
+            2) N &gt;= 2^(J-1)*length(af)
+    J - number of stages
+    af - analysis filters
+    af(:, 1) - lowpass filter (even length)
+    af(:, 2) - highpass filter (evenlength)</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="JJL_afb.html" class="code" title="function [o] = JJL_afb(x, af)">JJL_afb</a>	Analysis filter bank</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="JJL_dtdwt.html" class="code" title="function varargout = JJL_dtdwt(x,J,Faf,af,mode)">JJL_dtdwt</a>	1D Dual-Tree Discrete Wavelet Transform</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Mon 03-Oct-2011 09:42:49 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of JJL_cplxdtdwt2D</title>
+  <meta name="keywords" content="JJL_cplxdtdwt2D">
+  <meta name="description" content="Dual-Tree Complex 2D Discrete Wavelet Transform">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../index.html">Home</a> &gt;  <a href="index.html">Wavelet</a> &gt; JJL_cplxdtdwt2D.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../index.html"><img alt="<" border="0" src="../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for Wavelet&nbsp;<img alt=">" border="0" src="../right.png"></a></td></tr></table>-->
+
+<h1>JJL_cplxdtdwt2D
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Dual-Tree Complex 2D Discrete Wavelet Transform</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [varargout] = JJL_cplxdtdwt2D(x, J, Faf, af) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> Dual-Tree Complex 2D Discrete Wavelet Transform
+
+USAGE:
+   [W] = JJL_cplxdtdwt2D(x, J)
+   [W1,W2] = JJL_cplxdtdwt2D(x, J)
+   [Wr1,Wi1,Wr2,Wi2] = JJL_cplxdtdwt2D(x, J)
+
+   W - {Wr1 Wr2; Wi1 Wi2}
+   W1 - Wr1 + sqrt(-1)*Wi1
+   W2 - Wr2 + sqrt(-1)*Wi2
+   Wr1,Wi1,Wr2,Wi2 - the real and imaginary wavelet coefficients for each
+       direction
+
+Adapted From:
+ WAVELET SOFTWARE AT POLYTECHNIC UNIVERSITY, BROOKLYN, NY
+ http://taco.poly.edu/WaveletSoftware/</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="FSfarras.html" class="code" title="function [af, sf] = FSfarras">FSfarras</a>	Farras filters organized for the dual-tree</li><li><a href="JJL_dwt2D.html" class="code" title="function out = JJL_dwt2D(x, J, af)">JJL_dwt2D</a>	discrete 2-D wavelet transform</li><li><a href="dualfilt1.html" class="code" title="function [af, sf] = dualfilt1">dualfilt1</a>	Kingsbury Q-filters for the dual-tree complex DWT</li><li><a href="pm.html" class="code" title="function [u, v] = pm(a,b)">pm</a>	[u v] = pm(a,b);</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="JJL_cplxdual2D_plots.html" class="code" title="">JJL_cplxdual2D_plots</a>	cplxdual2D_plots</li><li><a href="JJL_den2D.html" class="code" title="function [y,w,T] = JJL_den2D(x,T,J)">JJL_den2D</a>	%</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Mon 03-Oct-2011 09:42:49 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

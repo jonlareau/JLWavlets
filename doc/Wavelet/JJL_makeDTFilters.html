@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of JJL_makeDTFilters</title>
+  <meta name="keywords" content="JJL_makeDTFilters">
+  <meta name="description" content="Function for making JJL version of the dualtree filters.  Formats either">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../index.html">Home</a> &gt;  <a href="index.html">Wavelet</a> &gt; JJL_makeDTFilters.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../index.html"><img alt="<" border="0" src="../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for Wavelet&nbsp;<img alt=">" border="0" src="../right.png"></a></td></tr></table>-->
+
+<h1>JJL_makeDTFilters
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>Function for making JJL version of the dualtree filters.  Formats either</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [haf,gaf,hsf,gsf] = JJL_makeDTFilters(J,Faf,af,Fsf,sf,ALTERNATE) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment">Function for making JJL version of the dualtree filters.  Formats either
+the default or user defined filters into JJL_[xxx]dtdwt[N]D() format.
+
+The default filters to use are the Farras designed filters from the POLY
+implementation.
+
+USAGE:
+   [haf,gaf,hsf,gsf] = JJL_makeDTFilters(J)
+   [haf,gaf,hsf,gsf] = JJL_makeDTFilters(J,Faf,af,Fsf,sf)
+   [haf,gaf,hsf,gsf] = JJL_makeDTFilters(J,Faf,af,Fsf,sf,ALTERNATE)
+
+INPUTS:
+   J - number of scales to use
+   Faf - First stage analysis filters
+   af - subsequent stage analysis filters
+   Fsf - First Stage Synthesis filters
+   sf - Subsequent Stage Synthesis filters
+   ALTERNATE - [(1),0] Should the subsequent stage filters be alternated
+       for stability?
+
+OUTPUTS:
+   haf - High Frequency analysis filters
+   gaf - Low Frequency analysis filters
+   hsf - High Frequency synthisis filters
+   hsf - Low Frequency synthisis filters</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="FSfarras.html" class="code" title="function [af, sf] = FSfarras">FSfarras</a>	Farras filters organized for the dual-tree</li><li><a href="dualfilt1.html" class="code" title="function [af, sf] = dualfilt1">dualfilt1</a>	Kingsbury Q-filters for the dual-tree complex DWT</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="JJL_dtdwt.html" class="code" title="function varargout = JJL_dtdwt(x,J,Faf,af,mode)">JJL_dtdwt</a>	1D Dual-Tree Discrete Wavelet Transform</li><li><a href="JJL_dtdwt2D.html" class="code" title="function varargout = JJL_dtdwt2D(x,J,Faf,af,mode,ALTERNATE)">JJL_dtdwt2D</a>	Real 2D Dual-Tree Discrete Wavelet Transform</li><li><a href="JJL_idtdwt.html" class="code" title="function [y] = JJL_idtdwt(wh,wg,J,Fsf,sf)">JJL_idtdwt</a>	Inverse Dual-Tree Discrete Wavelet Transform</li><li><a href="JJL_idtdwt2D.html" class="code" title="function [y] = JJL_idtdwt2D(wh,wg,J,Fsf,sf)">JJL_idtdwt2D</a>	Inverse 2-D Dual-Tree Discrete Wavelet Transform</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Mon 03-Oct-2011 09:42:49 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>

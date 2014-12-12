@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+  <title>Description of JJL_afb2D_A</title>
+  <meta name="keywords" content="JJL_afb2D_A">
+  <meta name="description" content="2D Analysis Filter Bank">
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <meta name="generator" content="m2html v1.5 &copy; 2003-2005 Guillaume Flandin">
+  <meta name="robots" content="index, follow">
+  <link type="text/css" rel="stylesheet" href="../m2html.css">
+</head>
+<body>
+<a name="_top"></a>
+<div><a href="../index.html">Home</a> &gt;  <a href="index.html">Wavelet</a> &gt; JJL_afb2D_A.m</div>
+
+<!--<table width="100%"><tr><td align="left"><a href="../index.html"><img alt="<" border="0" src="../left.png">&nbsp;Master index</a></td>
+<td align="right"><a href="index.html">Index for Wavelet&nbsp;<img alt=">" border="0" src="../right.png"></a></td></tr></table>-->
+
+<h1>JJL_afb2D_A
+</h1>
+
+<h2><a name="_name"></a>PURPOSE <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>2D Analysis Filter Bank</strong></div>
+
+<h2><a name="_synopsis"></a>SYNOPSIS <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="box"><strong>function [lo, hi] = JJL_afb2D_A(x, af, d) </strong></div>
+
+<h2><a name="_description"></a>DESCRIPTION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+<div class="fragment"><pre class="comment"> 2D Analysis Filter Bank
+ (along one dimension only)
+
+ [lo, hi] = afb2D_A(x, af, d);
+ INPUT:
+    x - NxM matrix, where min(N,M) &gt; 2*length(filter)
+           (N, M are even)
+    af - analysis filter for the columns
+    af(:, 1) - lowpass filter
+    af(:, 2) - highpass filter
+    d - dimension of filtering (d = 1 or 2)
+ OUTPUT:
+     lo, hi - lowpass, highpass subbands
+
+ % Example
+ x = rand(32,64);
+ [af, sf] = farras;
+ [lo, hi] = afb2D_A(x, af, 1);
+ y = sfb2D_A(lo, hi, sf, 1);
+ err = x - y;
+ max(max(abs(err)))</pre></div>
+
+<!-- crossreference -->
+<h2><a name="_cross"></a>CROSS-REFERENCE INFORMATION <a href="#_top"><img alt="^" border="0" src="../up.png"></a></h2>
+This function calls:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="cshift2D.html" class="code" title="function y = cshift2D(x, m)">cshift2D</a>	2D Circular Shift</li></ul>
+This function is called by:
+<ul style="list-style-image:url(../matlabicon.gif)">
+<li><a href="JJL_afb2D.html" class="code" title="function out = JJL_afb2D(x, af1, af2)">JJL_afb2D</a>	2D Analysis Filter Bank</li></ul>
+<!-- crossreference -->
+
+
+
+
+<hr><address>Generated on Mon 03-Oct-2011 09:42:49 by <strong><a href="http://www.artefact.tk/software/matlab/m2html/" title="Matlab Documentation in HTML">m2html</a></strong> &copy; 2005</address>
+</body>
+</html>
